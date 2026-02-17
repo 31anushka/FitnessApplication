@@ -12,6 +12,7 @@ import java.util.UUID;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+
     @Column(columnDefinition = "uuid", updatable = false)
     private UUID id;
 
@@ -30,9 +31,9 @@ public class User {
     @Column(name = "password_hash", nullable = false)
     private String passwordHash;
 
-    @Column(name = "dob", nullable = false)
-    private String dob;
+//    @Column(name = "dob", nullable = false)
+//    private String dob;
 
-    @Column(name = "mfa_enabled", nullable = false)
-    private Boolean mfaEnabled = false;
+//    @Column(name = "mfa_enabled", nullable = false)
+//    private Boolean mfaEnabled = false;
 }
